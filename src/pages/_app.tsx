@@ -39,7 +39,6 @@ export default function App({ Component, pageProps }: AppProps) {
           </Head>
           <ProjectLayout>
             <Component {...pageProps} />
-            <div>div</div>
           </ProjectLayout>
         </div>
       </SlideContext.Provider>

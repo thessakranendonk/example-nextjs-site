@@ -49,7 +49,7 @@ const IndexPage: NextPage<IndexPageProps> = () => {
     setMapIsSidePanelVisible(true);
   };
   return (
-    <>
+    <div className="relative -z-80">
       <HeroOne
         image="https://images.unsplash.com/photo-1491895200222-0fc4a4c35e18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2874&q=80"
         location="Bloor West Village"
@@ -76,7 +76,7 @@ const IndexPage: NextPage<IndexPageProps> = () => {
         onMapOpen={openMapSidePanel}
         onMapClose={closeMapSidePanel}
       />
-    </>
+    </div>
   );
 };
 

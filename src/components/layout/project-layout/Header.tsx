@@ -51,13 +51,14 @@ export const Header: React.FC = () => {
   };
   const location = useRouter();
   return (
-    <>
+    <div className="z-50">
       <IconHeader
         companyName="Hello"
         logo="https://res.cloudinary.com/dybcfr6cd/image/upload/v1669227162/runnymede_ixn5or.png"
         navigationLinks={navigationLinks}
         iconNavBarItems={iconNavBarItems}
         headerBgColor="bg-white"
+        textClassName="font-serif"
         dropdownBgColor="bg-green-900"
         dropdownBorderColor="border-green-900"
         dropdownTextColor="text-green-900"
@@ -70,6 +71,6 @@ export const Header: React.FC = () => {
         onMenuClose={closeSidePanel}
         isPanelOpen={isSidePanelVisible}
       />
-    </>
+    </div>
   );
 };
