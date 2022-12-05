@@ -4,14 +4,14 @@ const plugin = require("tailwindcss/plugin");
 module.exports = {
   theme: {
     // fontFamily: {},
-    fontSize: {
-      xl1: "1.5rem",
-      xl2: "2.5rem",
-      xl3: "4rem",
-      xl4: "5rem",
-      xl5: "8rem",
-      xl6: "12rem",
-    },
+    // fontSize: {
+    //   xl1: "1.5rem",
+    //   xl2: "2.5rem",
+    //   xl3: "4rem",
+    //   xl4: "5rem",
+    //   xl5: "8rem",
+    //   xl6: "12rem",
+    // },
 
     extend: {
       colors: {
@@ -66,6 +66,25 @@ module.exports = {
     require("@tailwindcss/forms"),
     require("@tailwindcss/aspect-ratio"),
     require("@tailwindcss/line-clamp"),
+    plugin(function ({ addUtilities }) {
+      const utilities = {
+        ".inset-center": {
+          top: "50%",
+          left: "50%",
+          "@apply -translate-x-1/2 -translate-y-1/2": {},
+        },
+        ".inset-y-center": {
+          top: "50%",
+          "@apply -translate-y-1/2": {},
+        },
+        ".inset-x-center": {
+          left: "50%",
+          "@apply -translate-x-1/2": {},
+        },
+      };
+
+      addUtilities(utilities, ["responsive", "hover"]);
+    }),
     // custom inline plugin implementation with css variables
     plugin(function ({ addBase }) {
       addBase({
