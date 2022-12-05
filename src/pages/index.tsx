@@ -170,7 +170,7 @@ const IndexPage: NextPage<IndexPageProps> = () => {
         id="hours"
         className="static flex w-screen bg-red-900 justify-center py-14"
       >
-        <div className="flex w-mapXL">
+        <div className="flex w-mapXL shadow-lg">
           <DynamicMap
             mapLocationDetails={locationsList}
             mapCenter={[43.65102, -79.47588]}
@@ -178,7 +178,6 @@ const IndexPage: NextPage<IndexPageProps> = () => {
             mapClassName="absolute inset-x-center"
             mapSize="w-mapXL h-mapSidePanelXL"
           />
-
           <MapInfoSidePanel
             mapContactInfo={contact}
             businessHours={hours}
