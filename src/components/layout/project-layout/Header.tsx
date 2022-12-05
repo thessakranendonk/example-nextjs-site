@@ -10,8 +10,8 @@ const iconNavBarItems: Array<IconNavBarProps> = [
   {
     icon: <ClockIcon className="text-red-900" />,
     iconLink: "/#hours",
-    title: "Monday - Friday",
-    undertext: "8am to 5pm",
+    title: "Monday - Friday | Sat",
+    undertext: "10am to 4pm | 10am to 1pm",
   },
   {
     icon: <PhoneIcon className="text-red-900" />,
