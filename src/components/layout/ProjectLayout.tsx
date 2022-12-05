@@ -1,9 +1,8 @@
 import { NavigationLink } from "component-bible-library/lib/components/SimpleHeader/SimpleHeader";
 import { PropsWithChildren, useContext } from "react";
 import { Content } from "./project-layout/Content";
+import Footer from "./project-layout/Footer";
 import { Header } from "./project-layout/Header";
-// import { Footer } from "./project-layout/Footer";
-// import { Content } from "./project-layout/Content";
 import { Wrapper } from "./project-layout/Wrapper";
 
 const containerPaddingStyle = "px-4 sm:px-6 xl:px-8";
@@ -19,7 +18,7 @@ export const ProjectLayout: React.FC<PropsWithChildren> = ({ children }) => {
       <Content containerPaddingStyle={containerPaddingStyle}>
         {children}
       </Content>
-      {/* <Footer containerPaddingStyle={containerPaddingStyle} /> */}
+      <Footer />
     </Wrapper>
   );
 };
