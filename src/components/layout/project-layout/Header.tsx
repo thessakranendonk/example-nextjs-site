@@ -8,29 +8,29 @@ import { SlideContext } from "../../../pages/_app";
 
 const iconNavBarItems: Array<IconNavBarProps> = [
   {
-    icon: <ClockIcon className="text-green-900" />,
-    iconLink: "/clock",
+    icon: <ClockIcon className="text-red-900" />,
+    iconLink: "#hours",
     title: "Monday - Friday",
     undertext: "8am to 5pm",
   },
   {
-    icon: <PhoneIcon className="text-green-900" />,
-    iconLink: "/call",
-    title: "519-861-4813",
+    icon: <PhoneIcon className="text-red-900" />,
+    iconLink: "tel:416-800-9697",
+    title: "416-800-9697",
     undertext: "Give us a Call",
   },
   {
-    icon: <MapPinIcon className="text-green-900" />,
-    iconLink: "/location",
+    icon: <MapPinIcon className="text-red-900" />,
+    iconLink: "#hours",
     title: "Bloor West Village",
     undertext: "Toronto, Ontario",
   },
 ];
 
 const navigationLinks: Array<NavigationLink> = [
-  { name: "About", href: "/about" },
-  { name: "Services", href: "/services" },
-  { name: "Hours & Location", href: "/hours" },
+  { name: "About", href: "#about" },
+  { name: "Physicians", href: "#physicians" },
+  { name: "Hours & Location", href: "#hours" },
   { name: "Our Policy", href: "/policy" },
 ];
 
@@ -59,13 +59,13 @@ export const Header: React.FC = () => {
         iconNavBarItems={iconNavBarItems}
         headerBgColor="bg-white"
         textClassName="font-serif"
-        dropdownBgColor="bg-green-900"
-        dropdownBorderColor="border-green-900"
-        dropdownTextColor="text-green-900"
+        dropdownBgColor="bg-red-900"
+        dropdownBorderColor="border-red-900"
+        dropdownTextColor="text-red-900"
         linkClassName="text-black text-md font-normal font-serif"
         logoClassName="h-20 mt-6 pl-8 lg:h-24 lg:pl-32 lg:mt-4"
-        hoverClassName="hover:text-purple-400 font-serif"
-        activeLinkClassName="text-yellow-300 font-serif"
+        hoverClassName="hover:text-red-900 font-serif"
+        activeLinkClassName="text-red-900 font-serif"
         currentActiveLocation={location.pathname}
         onMenuOpen={openSidePanel}
         onMenuClose={closeSidePanel}
