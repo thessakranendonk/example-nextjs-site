@@ -35,7 +35,9 @@ export default function App({ Component, pageProps }: AppProps) {
           )}
         >
           <Head>
-            <title>Thessa Kranendonk - Web Development</title>
+            <title>
+              Runnymede Medical CLinic - Thessa Kranendonk, Web Development
+            </title>
           </Head>
           <ProjectLayout>
             <Component {...pageProps} />
