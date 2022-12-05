@@ -110,7 +110,7 @@ const IndexPage: NextPage<IndexPageProps> = () => {
       />
       <div className="bg-info-panel mx-auto" id="about">
         <img
-          className="absolute -z-80 object-cover blur-sm"
+          className="absolute -z-80 h-5/6 object-fill blur-sm"
           src="https://res.cloudinary.com/dybcfr6cd/image/upload/v1670110454/nordwood-themes-KcsKWw77Ovw-unsplash_wil93u.jpg"
           alt="background"
         />
@@ -139,32 +139,32 @@ const IndexPage: NextPage<IndexPageProps> = () => {
             ))}
           </ul>
         </div>
-      </div>
 
-      <div className="w-mapXL mx-auto mb-16">
-        <h2 className="text-red-900 font-semibold text-5xl font-serif pb-12">
-          A tour through our practice
-        </h2>
-        <ArrowedCarousel
-          images={images}
-          carouselClassName="h-96 w-mapXL rounded-lg shadow-lg"
-          alt="Our Clinic"
-        />
-      </div>
+        <div className="w-mapXL mx-auto mb-16">
+          <h2 className="text-red-900 font-semibold text-5xl font-serif pb-12">
+            A tour through our practice
+          </h2>
+          <ArrowedCarousel
+            images={images}
+            carouselClassName="h-96 w-mapXL rounded-lg shadow-lg"
+            alt="Our Clinic"
+          />
+        </div>
 
-      <div
-        id="physicians"
-        className="flex flex-col w-mapXL mx-auto pb-10 font-serif "
-      >
-        <h2 className="text-5xl font-semibold text-red-900 pb-5">
-          Meet our Physicians
-        </h2>
-        <div className="w-12 h-0.5 rounded-xl bg-red-900"></div>
+        <div
+          id="physicians"
+          className="flex flex-col w-mapXL mx-auto pb-10 font-serif "
+        >
+          <h2 className="text-5xl font-semibold text-red-900 pb-5">
+            Meet our Physicians
+          </h2>
+          <div className="w-12 h-0.5 rounded-xl bg-red-900"></div>
 
-        <p className="pb-2 pt-5 text-lg">Dr. Jabor MD, CCFP</p>
-        <p className="pb-2 text-lg">Dr. Ho-Wo Cheong MD,CCFP</p>
-        <p className="pb-2 text-lg">Dr. Leszko MD</p>
-        <p className="pb-2 text-lg">Dr. Kempenski MD, CCFP </p>
+          <p className="pb-2 pt-5 text-lg">Dr. Jabor MD, CCFP</p>
+          <p className="pb-2 text-lg">Dr. Ho-Wo Cheong MD,CCFP</p>
+          <p className="pb-2 text-lg">Dr. Leszko MD</p>
+          <p className="pb-2 text-lg">Dr. Kempenski MD, CCFP </p>
+        </div>
       </div>
       <div
         id="hours"
