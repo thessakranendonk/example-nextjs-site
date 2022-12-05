@@ -9,7 +9,7 @@ import { SlideContext } from "../../../pages/_app";
 const iconNavBarItems: Array<IconNavBarProps> = [
   {
     icon: <ClockIcon className="text-red-900" />,
-    iconLink: "#hours",
+    iconLink: "/#hours",
     title: "Monday - Friday",
     undertext: "8am to 5pm",
   },
@@ -21,16 +21,16 @@ const iconNavBarItems: Array<IconNavBarProps> = [
   },
   {
     icon: <MapPinIcon className="text-red-900" />,
-    iconLink: "#hours",
+    iconLink: "/#hours",
     title: "Bloor West Village",
     undertext: "Toronto, Ontario",
   },
 ];
 
 const navigationLinks: Array<NavigationLink> = [
-  { name: "About", href: "#about" },
-  { name: "Physicians", href: "#physicians" },
-  { name: "Hours & Location", href: "#hours" },
+  { name: "About", href: "/#about" },
+  { name: "Physicians", href: "/#physicians" },
+  { name: "Hours & Location", href: "/#hours" },
   { name: "Our Policy", href: "/policy" },
 ];
 
