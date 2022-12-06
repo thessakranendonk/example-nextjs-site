@@ -2,7 +2,7 @@ module.exports = {
   content: [
     "./public/**/*.html",
     "./src/**/*.{js,ts,jsx,tsx}",
-    "./node_modules/component-bible-library/**/*.{html,js,ts}",
+    "./node_modules/techtessy/**/*.{html,js,ts}",
   ],
   presets: [require("./tailwind-preset")],
   darkMode: "media", // vs. 'class'
@@ -15,9 +15,11 @@ module.exports = {
       width: {
         mapXLBg: "64rem",
         mapXL: "60rem",
+        carouselWidth: "60rem",
       },
       height: {
         mapSidePanelXL: "38rem",
+        carouselHeight: "40rem",
       },
     },
   },
