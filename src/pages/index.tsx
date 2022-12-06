@@ -4,12 +4,12 @@ import {
   HeroInfoBar,
   HeroOne,
   MapInfoSidePanel,
-} from "component-bible-library";
+} from "techtessy";
 import dynamic from "next/dynamic";
 import {
   MapBusinessHoursProps,
   MapContactProps,
-} from "component-bible-library/lib/components/types/interfaces.types";
+} from "techtessy/lib/components/types/interfaces.types";
 import { NextPage } from "next";
 import { useState } from "react";
 import { MapProps } from "../components/Map";
@@ -140,13 +140,13 @@ const IndexPage: NextPage<IndexPageProps> = () => {
           </ul>
         </div>
 
-        <div className="w-mapXL mx-auto mb-16">
+        <div className="w-carouselWidth mx-auto mb-16">
           <h2 className="text-red-900 font-semibold text-5xl font-serif pb-12">
             A tour through our practice
           </h2>
           <ArrowedCarousel
             images={images}
-            carouselClassName="h-96 w-mapXL rounded-lg shadow-lg"
+            carouselClassName="w-carouselWidth h-carouselHeight mx-auto rounded-lg shadow-lg"
             alt="Our Clinic"
           />
         </div>
@@ -163,7 +163,7 @@ const IndexPage: NextPage<IndexPageProps> = () => {
           <p className="pb-2 pt-5 text-lg">Dr. Jabor MD, CCFP</p>
           <p className="pb-2 text-lg">Dr. Ho-Wo Cheong MD,CCFP</p>
           <p className="pb-2 text-lg">Dr. Leszko MD</p>
-          <p className="pb-2 text-lg">Dr. Kempenski MD, CCFP </p>
+          <p className="pb-16 text-lg">Dr. Kempenski MD, CCFP </p>
         </div>
       </div>
       <div

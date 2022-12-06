@@ -1,9 +1,9 @@
 import { useRouter } from "next/router";
 import { createContext, useContext, useState } from "react";
-import { IconHeader } from "component-bible-library";
+import { IconHeader } from "techtessy";
 import { PhoneIcon, MapPinIcon, ClockIcon } from "@heroicons/react/24/outline";
-import { NavigationLink } from "component-bible-library/lib/components/SimpleHeader/SimpleHeader";
-import { IconNavBarProps } from "component-bible-library/lib/components/types/interfaces.types";
+import { NavigationLink } from "techtessy/lib/components/SimpleHeader/SimpleHeader";
+import { IconNavBarProps } from "techtessy/lib/components/types/interfaces.types";
 import { SlideContext } from "../../../pages/_app";
 
 const iconNavBarItems: Array<IconNavBarProps> = [
