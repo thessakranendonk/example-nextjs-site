@@ -3548,36 +3548,6 @@ commondir@^1.0.1:
   resolved "https://registry.yarnpkg.com/commondir/-/commondir-1.0.1.tgz#ddd800da0c66127393cca5950ea968a3aaf1253b"
   integrity sha512-W9pAhw0ja1Edb5GVdIF1mjZw/ASI0AlShXM83UUGe2DVr5TdAPEA1OA8m/g8zWp9x6On7gqufY+FatDbC3MDQg==
 
-component-bible-library@^0.2.9:
-  version "0.2.9"
-  resolved "https://registry.yarnpkg.com/component-bible-library/-/component-bible-library-0.2.9.tgz#a6a01441a853d3dafe9e263a74259ad55c259a13"
-  integrity sha512-BQ1C91FD9lMyEqlkaPc4YX7Tr1vU5uJD+1aOCrtXwf8hHDByfNrNIw6fChV45JisCP0UWNRJNEHodDj09/U7aA==
-  dependencies:
-    "@headlessui/react" "^1.7.4"
-    "@heroicons/react" "^2.0.13"
-    "@patternfly/react-icons" "^4.92.10"
-    "@tailwindcss/aspect-ratio" "^0.4.2"
-    "@tailwindcss/forms" "^0.5.3"
-    "@tailwindcss/line-clamp" "^0.4.2"
-    "@tailwindcss/typography" "^0.5.8"
-    "@testing-library/jest-dom" "^5.16.5"
-    "@testing-library/react" "^13.4.0"
-    "@testing-library/user-event" "^13.5.0"
-    "@types/leaflet" "^1.9.0"
-    "@types/node" "^16.18.3"
-    "@types/react" "^18.0.25"
-    "@types/react-dom" "^18.0.8"
-    clsx "^1.2.1"
-    leaflet "^1.9.3"
-    leaflet-defaulticon-compatibility "^0.1.1"
-    leaflet.pm "^2.2.0"
-    react "^18.2.0"
-    react-dom "^18.2.0"
-    react-leaflet "^4.2.0"
-    react-router-dom "^6.4.3"
-    react-scripts "5.0.1"
-    web-vitals "^2.1.4"
-
 compressible@~2.0.16:
   version "2.0.18"
   resolved "https://registry.yarnpkg.com/compressible/-/compressible-2.0.18.tgz#af53cca6b070d4c3c0750fbd77286a6d7cc46fba"
@@ -9607,6 +9577,36 @@ tapable@^2.0.0, tapable@^2.1.1, tapable@^2.2.0:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/tapable/-/tapable-2.2.1.tgz#1967a73ef4060a82f12ab96af86d52fdb76eeca0"
   integrity sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==
+
+techtessy@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/techtessy/-/techtessy-0.0.1.tgz#0821a065bd3b9cf662ad26f85769594bd5ed55fe"
+  integrity sha512-PQfjxfI94ajsvN9B6Olbmpy139OXeJvCq0CfgzDaIO5x0DzwBqwUj9ASy2XlfZGPEmHkOUEzHBCgS6wTsxMeJg==
+  dependencies:
+    "@headlessui/react" "^1.7.4"
+    "@heroicons/react" "^2.0.13"
+    "@patternfly/react-icons" "^4.92.10"
+    "@tailwindcss/aspect-ratio" "^0.4.2"
+    "@tailwindcss/forms" "^0.5.3"
+    "@tailwindcss/line-clamp" "^0.4.2"
+    "@tailwindcss/typography" "^0.5.8"
+    "@testing-library/jest-dom" "^5.16.5"
+    "@testing-library/react" "^13.4.0"
+    "@testing-library/user-event" "^13.5.0"
+    "@types/leaflet" "^1.9.0"
+    "@types/node" "^16.18.3"
+    "@types/react" "^18.0.25"
+    "@types/react-dom" "^18.0.8"
+    clsx "^1.2.1"
+    leaflet "^1.9.3"
+    leaflet-defaulticon-compatibility "^0.1.1"
+    leaflet.pm "^2.2.0"
+    react "^18.2.0"
+    react-dom "^18.2.0"
+    react-leaflet "^4.2.0"
+    react-router-dom "^6.4.3"
+    react-scripts "5.0.1"
+    web-vitals "^2.1.4"
 
 temp-dir@^2.0.0:
   version "2.0.0"
