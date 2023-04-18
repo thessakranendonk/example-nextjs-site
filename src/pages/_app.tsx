@@ -4,6 +4,7 @@ import Head from "next/head";
 import { ProjectLayout } from "../components/layout/ProjectLayout";
 import { createContext, Dispatch, SetStateAction, useState } from "react";
 import clsx from "clsx";
+import { LOCATION_DETAILS } from "../../data/locationDetails/location";
 
 // import "leaflet/dist/leaflet.css";
 // import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.webpack.css"; // Re-uses images from ~leaflet package
@@ -36,7 +37,8 @@ export default function App({ Component, pageProps }: AppProps) {
         >
           <Head>
             <title>
-              Runnymede Medical CLinic - Thessa Kranendonk, Web Development
+              {LOCATION_DETAILS.clinic_name} - Thessa Kranendonk, Web
+              Development
             </title>
           </Head>
           <ProjectLayout>
