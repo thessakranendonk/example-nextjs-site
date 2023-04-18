@@ -16,14 +16,10 @@ module.exports = {
     extend: {
       colors: {
         current: "currentColor",
-        primary: {
-          darkBrown: "#24221c",
-          orange: "#ff6600",
-          teal: "#80ffe6",
-        },
-        rheum: {
-          darkBlue: "var(--color-primary)",
-          darkBlueHover: "#2f5c9a",
+        brand: {
+          dark: "var(--color-primary)",
+          darkHover: "#2f5c9a",
+          darkest: "#7f1D1D",
         },
       },
     },
@@ -53,13 +49,43 @@ module.exports = {
       3: "3",
     },
     zIndex: {
+      0: "0",
+      10: "10",
+      20: "20",
+      30: "30",
+      40: "40",
+      50: "50",
       60: "60",
       70: "70",
       80: "80",
       90: "90",
       100: "100",
     },
+    keyframes: {
+      pulsing: {
+        "0%": {
+          "box-shadow": "0 0 0 0 rgb(185 28 28)",
+          "animation-timing-function": "linear",
+        },
+        "40%": {
+          "box-shadow": "0 0 0 20px rgba(255, 26, 67, 0)",
+          "animation-timing-function": "linear",
+        },
+        "80%": {
+          "box-shadow": "0 0 0 20px rgba(255, 206, 67, 0)",
+          "animation-timing-function": "linear",
+        },
+        "100%": {
+          "box-shadow": "0 0 0 rgba(255, 206, 67, 0)",
+          "animation-timing-function": "linear",
+        },
+      },
+    },
+    animation: {
+      pulse: "pulsing 2s linear infinite",
+    },
   },
+
   plugins: [
     // popular tailwind plugins
     require("@tailwindcss/typography"),
@@ -68,6 +94,12 @@ module.exports = {
     require("@tailwindcss/line-clamp"),
     plugin(function ({ addUtilities }) {
       const utilities = {
+        ".backface-visible": {
+          "backface-visibility": "visible",
+        },
+        ".backface-hidden": {
+          "backface-visibility": "hidden",
+        },
         ".inset-center": {
           top: "50%",
           left: "50%",

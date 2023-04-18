@@ -15,9 +15,12 @@ module.exports = {
       width: {
         mapXLBg: "64rem",
         mapXL: "60rem",
+        mapSM: "40rem",
         carouselWidth: "60rem",
+        carouselWidthSm: "20rem",
       },
       height: {
+        mapSidePanelSM: "20rem",
         mapSidePanelXL: "38rem",
         carouselHeight: "40rem",
       },
