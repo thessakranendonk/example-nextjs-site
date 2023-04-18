@@ -9592,10 +9592,10 @@ tapable@^2.0.0, tapable@^2.1.1, tapable@^2.2.0:
   resolved "https://registry.yarnpkg.com/tapable/-/tapable-2.2.1.tgz#1967a73ef4060a82f12ab96af86d52fdb76eeca0"
   integrity sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==
 
-techtessy@^0.0.8:
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/techtessy/-/techtessy-0.0.8.tgz#04a1b57286c1e506c3043764b66386625250c8c5"
-  integrity sha512-cHLL/XV1lD1AtV7aSxsXl991fgpgQqpAfavSTUkD1doynjWxAMuHTKxEpRNVlbTVjUHaAgL2REbSO4asdwrd9A==
+techtessy@^0.0.9:
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/techtessy/-/techtessy-0.0.9.tgz#88576e3acc8de496b23a532722dc42ee1ee4131d"
+  integrity sha512-reDKiVRvkL+wvvD6gVxy+kYYM0b0eEpRHOz51pO06esF9fGDHy5/QJM+KsB05gEhytzKvODt6b26zCG1ZmBp+Q==
   dependencies:
     "@headlessui/react" "^1.7.4"
     "@heroicons/react" "^2.0.13"
