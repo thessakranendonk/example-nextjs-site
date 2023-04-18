@@ -1,4 +1,3 @@
-import { NavigationLink } from "component-bible-library/lib/components/SimpleHeader/SimpleHeader";
 import { PropsWithChildren, useContext } from "react";
 import { Content } from "./project-layout/Content";
 import Footer from "./project-layout/Footer";

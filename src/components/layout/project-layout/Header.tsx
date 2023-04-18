@@ -2,43 +2,39 @@ import { useRouter } from "next/router";
 import { createContext, useContext, useState } from "react";
 import { IconHeader } from "techtessy";
 import { PhoneIcon, MapPinIcon, ClockIcon } from "@heroicons/react/24/outline";
-import { NavigationLink } from "techtessy/lib/components/SimpleHeader/SimpleHeader";
 import { IconNavBarProps } from "techtessy/lib/components/types/interfaces.types";
 import { SlideContext } from "../../../pages/_app";
+import { LOCATION_DETAILS } from "../../../../data/locationDetails/location";
+import { NAVIGATION_LINKS } from "../../../../data/locationDetails/clinicData";
+import clsx from "clsx";
+import DanielLogo from "../../../../public/daniel.png";
 
-const iconNavBarItems: Array<IconNavBarProps> = [
+const iconNavBarItems: IconNavBarProps[] = [
   {
-    icon: <ClockIcon className="text-red-900" />,
+    icon: <ClockIcon className="text-brand-darkest" />,
     iconLink: "/#hours",
-    title: "Monday - Friday | Sat",
-    undertext: "10am to 4pm | 10am to 1pm",
+    title: LOCATION_DETAILS.opening_days,
+    undertext: LOCATION_DETAILS.opening_hours,
   },
   {
-    icon: <PhoneIcon className="text-red-900" />,
-    iconLink: "tel:416-800-9697",
-    title: "416-800-9697",
+    icon: <PhoneIcon className="text-brand-darkest" />,
+    iconLink: `tel:${LOCATION_DETAILS.phone}`,
+    title: LOCATION_DETAILS.phone,
     undertext: "Give us a Call",
   },
   {
-    icon: <MapPinIcon className="text-red-900" />,
+    icon: <MapPinIcon className="text-brand-darkest" />,
     iconLink: "/#hours",
-    title: "Bloor West Village",
-    undertext: "Toronto, Ontario",
+    title: LOCATION_DETAILS.neighborhood,
+    undertext: LOCATION_DETAILS.location,
   },
-];
-
-const navigationLinks: Array<NavigationLink> = [
-  { name: "About", href: "/#about" },
-  { name: "Physicians", href: "/#physicians" },
-  { name: "Hours & Location", href: "/#hours" },
-  { name: "Our Policy", href: "/policy" },
 ];
 
 export const SlideContent = createContext(false);
 
 export const Header: React.FC = () => {
   const [isSidePanelVisible, setIsSidePanelVisible] = useState(false);
-  const { slideViewBox, setSlideViewBox } = useContext(SlideContext);
+  const { setSlideViewBox } = useContext(SlideContext);
 
   const closeSidePanel = () => {
     setSlideViewBox(false);
@@ -53,19 +49,24 @@ export const Header: React.FC = () => {
   return (
     <div className="z-50">
       <IconHeader
-        companyName="Hello"
-        logo="https://res.cloudinary.com/dybcfr6cd/image/upload/v1669227162/runnymede_ixn5or.png"
-        navigationLinks={navigationLinks}
+        companyName="Daniel Medical Centre"
+        companyNameClassName="lg:text-xl xl:text-2xl lg:ml-24 lg:mt-6 font-medium rounded-full py-3 px-4 lg:bg-brand-darkest/20 text-brand-darkest md:hover:font-medium xl:hover:animate-pulse text-center"
+        logo={DanielLogo.src}
+        logoClassName="w-32 ml-8 lg:w-48 lg:mt-4 xl:ml-24"
+        navigationLinks={NAVIGATION_LINKS}
         iconNavBarItems={iconNavBarItems}
         headerBgColor="bg-white"
-        textClassName="font-serif"
-        dropdownBgColor="bg-red-900"
-        dropdownBorderColor="border-red-900"
-        dropdownTextColor="text-red-900"
-        linkClassName="text-black text-md font-normal font-serif"
-        logoClassName="h-20 mt-6 pl-8 lg:h-24 lg:pl-32 lg:mt-4"
-        hoverClassName="hover:text-red-900 font-serif"
-        activeLinkClassName="text-red-900 font-serif"
+        textClassName="text-black"
+        dropdownBgColor="bg-brand-darkest"
+        dropdownBorderColor="border-brand-darkest rounded-lg"
+        dropdownTextColor="text-brand-darkest"
+        linkClassName="text-black text-md font-normal"
+        hoverClassName={clsx(
+          "relative transition-all",
+          "before:w-0 before:h-0.5 before:absolute before:bottom-0 before:left-2/4 before:rounded-full before:bg-transparent before:transition-all before:duration-500",
+          "hover:before:w-full hover:before:left-0 hover:before:bg-brand-darkest/80 hover:text-brand-darkest hover:font-semibold"
+        )}
+        activeLinkClassName="text-brand-darkest font-medium"
         currentActiveLocation={location.pathname}
         onMenuOpen={openSidePanel}
         onMenuClose={closeSidePanel}
