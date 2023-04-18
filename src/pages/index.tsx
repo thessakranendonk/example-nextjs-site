@@ -15,7 +15,7 @@ import {
 } from "../../data/locationDetails/clinicData";
 import { LOCATION_DETAILS } from "../../data/locationDetails/location";
 import { PHYSICIANS } from "../../data/specialists/physicians";
-import { Person } from "../components/ui/Person";
+import { Person } from "../components/UI/Person";
 import { MAP_HOURS, MAP_LOCATION_LIST } from "../../data/locationDetails/map";
 import ContactForm from "../components/ContactForm";
 
