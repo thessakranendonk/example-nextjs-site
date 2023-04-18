@@ -1,5 +1,8 @@
 import type { NextPage } from "next";
 
+/**
+ * Renders the Policy Page.
+ */
 const Policy: NextPage = () => {
   return (
     <>

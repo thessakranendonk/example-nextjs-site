@@ -4,9 +4,12 @@ import Link from "next/link";
 import clsx from "clsx";
 
 import { PHARMACY } from "../../data/pharmacy/pharmacy";
-import { Person } from "../components/ui/Person";
-import { ContactLinkButton } from "../components/ui/ContactLinkButton";
+import { Person } from "../components/UI/Person";
+import { ContactLinkButton } from "../components/UI/ContactLinkButton";
 
+/**
+ * Renders the Pharmacy logo if there is one.
+ */
 const PharmacyLogo: React.FC = () => {
   return (
     <div className="relative">
@@ -19,7 +22,10 @@ const PharmacyLogo: React.FC = () => {
   );
 };
 
-const PromoCard: React.FC = () => {
+/**
+ * Renders a Pharmacy card by using the Person component and looks like a business card.
+ */
+const PharmacyCard: React.FC = () => {
   return (
     <div
       className={clsx(
@@ -64,6 +70,9 @@ const PromoCard: React.FC = () => {
   );
 };
 
+/**
+ * Renders the Pharmacy Page by displaying the PharmacyCard.
+ */
 const PharmacyPage: NextPage = () => {
   return (
     <>
@@ -72,7 +81,7 @@ const PharmacyPage: NextPage = () => {
           <h1 className="text-4xl text-brand-darkest font-semibold pb-12">
             {PHARMACY.name}
           </h1>
-          <PromoCard />
+          <PharmacyCard />
         </div>
       </div>
     </>

@@ -25,6 +25,9 @@ const DynamicMap = dynamic(() => import("../components/Map"), {
   ssr: false,
 });
 
+/**
+ * Renders an Image Carousel with arrows.
+ */
 const ImageCarousel: React.FC = () => {
   return (
     <div className="w-[calc(10% - 10px)] mx-auto px-10 lg:px-4 mb-16">
@@ -40,6 +43,9 @@ const ImageCarousel: React.FC = () => {
   );
 };
 
+/**
+ * Renders all physicians by using the Person component.
+ */
 const Physicians: React.FC = () => {
   return (
     <div
@@ -64,6 +70,9 @@ const Physicians: React.FC = () => {
   );
 };
 
+/**
+ * Renders the clinics specific information.
+ */
 const ClinicInformationPanel: React.FC = () => {
   return (
     <div className="flex flex-col lg:w-mapXL mx-auto py-10 p-4">
@@ -93,6 +102,9 @@ const ClinicInformationPanel: React.FC = () => {
   );
 };
 
+/**
+ * Home page that renders a Hero, ClinicInformationPanel, Physicians, ImageCarousel and ContactForm.
+ */
 const IndexPage: NextPage<IndexPageProps> = () => {
   const [isMapSidePanelVisible, setMapIsSidePanelVisible] = useState(true);
 
