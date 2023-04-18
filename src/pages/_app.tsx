@@ -36,10 +36,7 @@ export default function App({ Component, pageProps }: AppProps) {
           )}
         >
           <Head>
-            <title>
-              {LOCATION_DETAILS.clinic_name} - Thessa Kranendonk, Web
-              Development
-            </title>
+            <title>{LOCATION_DETAILS.clinic_name}</title>
           </Head>
           <ProjectLayout>
             <Component {...pageProps} />
