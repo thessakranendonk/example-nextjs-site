@@ -38,10 +38,10 @@ const PhoneLinkButton: React.FC<PhoneLinkButtonProps> = ({
     className={linkButtonClassName}
   >
     <PhoneIcon className="w-5 h-5 text-brand-darkest" aria-hidden="true" />
-    <span className="sr-only">Phone Number:</span>
-    <span className="ml-3 my-0.5 text-sm text-brand-darkest group-hover:text-brand-darkest">
+    <div className="sr-only">Phone Number:</div>
+    <div className="ml-3 my-0.5 text-sm text-brand-darkest group-hover:text-brand-darkest">
       {phoneNumber}
-    </span>
+    </div>
   </a>
 );
 
@@ -52,10 +52,10 @@ const FaxLinkButton: React.FC<FaxLinkButtonProps> = ({ faxNumber, name }) => (
     className={linkButtonClassName}
   >
     <PrinterIcon className="w-5 h-5 text-brand-darkest" aria-hidden="true" />
-    <span className="sr-only">Fax Number:</span>
-    <span className="ml-3 my-0.5 text-sm text-brand-darkest group-hover:text-brand-darkest">
+    <div className="sr-only">Fax Number:</div>
+    <div className="ml-3 my-0.5 text-sm text-brand-darkest group-hover:text-brand-darkest">
       {faxNumber}
-    </span>
+    </div>
   </a>
 );
 
